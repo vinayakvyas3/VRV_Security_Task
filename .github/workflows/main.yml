@@ -12,13 +12,23 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Navigate to project directory
+        run: cd app
+
       - name: Install dependencies
+        working-directory: frontend
         run: npm install
 
       - name: Build project
+        working-directory: frontend
         run: npm run build
 
       - name: Deploy to Server
-        run: scp -r ./build user@server:/path/to/deploy
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H server >> ~/.ssh/known_hosts
+          scp -r ./app/build user@server:/path/to/deploy
