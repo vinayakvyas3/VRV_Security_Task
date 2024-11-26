@@ -79,5 +79,18 @@ Access the Application
 
 Backend API: http://localhost:5000
 Frontend App: http://localhost:3000
+
 ![image](https://github.com/user-attachments/assets/0d290f7c-7a2a-487e-8126-e9e42d527e2f)
+![image](https://github.com/user-attachments/assets/aafc8891-c344-45b4-9b35-b3afd37372f1)
+![image](https://github.com/user-attachments/assets/0d9d1d61-5630-4dde-a6d8-957795143d3f)
+
+🧪 Testing
+Use Postman to test backend routes.
+Ensure MongoDB is running locally or connected via a cloud service like MongoDB Atlas.
+Check React frontend functionality after ensuring the backend is running.
+📧 Contact
+Name: Vinayak Vyas
+Email: Vyasvinayak90@gmail.com
+
+
 
