@@ -86,7 +86,7 @@ Frontend App: http://localhost:3000
 
 🧪 Testing
 Use Postman to test backend routes.
-Ensure MongoDB is running locally or connected via a cloud service like MongoDB Atlas.
+Ensure MongoDB is running locally or connected via a cloud service like MongoDB Compass.
 Check React frontend functionality after ensuring the backend is running.
 📧 Contact
 Name: Vinayak Vyas
