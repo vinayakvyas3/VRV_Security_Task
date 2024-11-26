@@ -61,6 +61,8 @@
         ]
     }
 }
+"homepage": "https://<vinayakvyas3>.github.io/<VRV_Security_Task>"
+
 {
   "scripts": {
     "build": "[my-framework] build --output public"
