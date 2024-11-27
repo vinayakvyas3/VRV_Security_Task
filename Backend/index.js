@@ -24,6 +24,8 @@ connectDB();
 app.use(cors()); // Enable CORS
 app.use(express.json()); // Parse JSON requests
 
+mongoose.connect('mongodb+srv://vyasvinayak90:jr6ICHG1LO9wB1di@cluster0.x6uwp.mongodb.net/')
+
 // Routes
 
 // Add a customer
