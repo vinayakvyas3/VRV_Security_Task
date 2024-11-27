@@ -10,6 +10,13 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+app.use(cors(
+    {
+        origin: ["https://vrv-security-task-bz6t.vercel.app/"],
+        methods:["POST", "GET"],
+        credentials:true
+    }
+    ));
 // Connect to MongoDB
 connectDB();
 
